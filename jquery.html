@@ -10,8 +10,8 @@
 <script>
     //uso del #id
     $(document).ready(function () {
-        $("#boton").click(function () {
-            $("#prueba").hide();
+        $("#b1, #b2").click(function () {
+            $("#p1, #p2").hide();
         });
     });
 
@@ -24,15 +24,14 @@
 
 </script>
 
-  <button id="boton">¡Touch me!</button>
-  <p id="prueba">Hola, prueba del #id</p>
+  <button id="b1">Haz clic</button>
+  <p id="p1">Hola, esto ha sido usado mediante el modo #id</p>
   <br>
-  <button onclick="myFunction()">Presioname</button>
+  <button onclick="myFunction()">Presiona</button>
   <p id="demo"></p>
   <br>
-  <button id="boton" type="button" class="btn btn-primary">Presiona</button>  
-  <p class="prueba">Esta es la prueba de .class</p>
-  <br> 
+  <button id="b2" type="button" class="btn btn-primary">Presiona</button>  
+  <p id="p2">Esta tambien se ha usado el modo #id</p>
   <p class="N">Al dar doble clic en el texto, desaparecerá. Intentalo.</p>
   
     <br>
@@ -40,7 +39,7 @@
     </ul>
     
     <script> 
-            $(document).ready(function () {
+     $(document).ready(function () {
         $("myFunction").getElementById(function (){
             $("demo").innerHTML="Hola"();
         });
