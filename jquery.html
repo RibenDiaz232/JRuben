@@ -7,7 +7,13 @@
     <title>JQuery</title>
 </head>
   
-  <script>
+<script>
+    //el uso del *
+    document.write("Uso del asterisco. Hice que el fondo fuera de un color");
+    $(document).ready(function () {
+        $("*").css("background-color", "silver"); //si escribo red el fondo se pone rojo
+    });
+
     //uso del #id
     $(document).ready(function () {
         $("#boton1").click(function () {
@@ -22,7 +28,7 @@
         });
     });
 
-    //uso del intro
+    //uso del .intro, .demo
     $(document).ready(function () {
         $(".N1, .N2").dblclick(function () {
             $(this).hide();
@@ -33,25 +39,12 @@
     $(document).ready(function () {
         $("b").css("background-color", "red");
     });
-    
-    //uso de demo
-    function myFunction() {
-    document.getElementById("demo").innerHTML = "Hola. Al dar clic el botó, aparezco. Y tambien puedo desaparecer..." class="N1";
-    
-    }
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous">
-  </script>
-  
-  <button onclick="myFunction()">Presiona</button>
-  <p id="demo"></p>
-  <br>
   <button id="boton2" type="button" class="btn btn-primary">Presiona</button>  
   <p class="prueba2">Esta es la prueba de .class</p>
   <br> 
-  <p class="N2">Da doble clik sobre nosotros, y nosotros nos ocultamos.</p>
+  <p class="N2">Al dar doble clic en el texto, desaparecerá. Intentalo.</p>
   
     <br>
         <li><a href="index.html">Página Principal</a></li>
