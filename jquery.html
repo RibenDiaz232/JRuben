@@ -22,14 +22,18 @@
         });
     });
 
-    function myFunction() {
-    document.getElementById("demo").innerHTML = "Callate Cristhian";
-    }
+    $(document).ready(function () {
+        $("myFunction").getElementById(function (){
+            $("demo").innerHTML();
+        });
+    });    
 </script>
 
   <button id="boton">¡Touch me!</button>
   <p id="prueba">Hola, prueba del #id</p>
+  <br>
   <button onclick="myFunction()">Tocame</button>
+  <br>
   <button id="boton" type="button" class="btn btn-primary">Presiona</button>  
   <p class="prueba">Esta es la prueba de .class</p>
   <br> 
