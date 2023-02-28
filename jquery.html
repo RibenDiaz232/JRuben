@@ -8,43 +8,32 @@
 </head>
   
 <script>
-    //el uso del *
-    document.write("Uso del asterisco. Hice que el fondo fuera de un color");
-    $(document).ready(function () {
-        $("*").css("background-color", "silver"); //si escribo red el fondo se pone rojo
-    });
-
     //uso del #id
     $(document).ready(function () {
-        $("#boton1").click(function () {
+        $("#boton").click(function () {
             $("#prueba").hide();
-        });
-    });
-
-    //uso del .class
-    $(document).ready(function () {
-        $("#boton2").click(function () {
-            $(".prueba2").hide();
         });
     });
 
     //uso del .intro, .demo
     $(document).ready(function () {
-        $(".N1, .N2").dblclick(function () {
+        $(".N").dblclick(function () {
             $(this).hide();
         });
     });
 
-    //uso del element
-    $(document).ready(function () {
-        $("b").css("background-color", "red");
-    });
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Callate Cristhian";
+    }
 </script>
 
-  <button id="boton2" type="button" class="btn btn-primary">Presiona</button>  
-  <p class="prueba2">Esta es la prueba de .class</p>
+  <button id="boton">¡Touch me!</button>
+  <p id="prueba">Hola, prueba del #id</p>
+  <button onclick="myFunction()">Tocame</button>
+  <button id="boton" type="button" class="btn btn-primary">Presiona</button>  
+  <p class="prueba">Esta es la prueba de .class</p>
   <br> 
-  <p class="N2">Al dar doble clic en el texto, desaparecerá. Intentalo.</p>
+  <p class="N">Al dar doble clic en el texto, desaparecerá. Intentalo.</p>
   
     <br>
         <li><a href="index.html">Página Principal</a></li>
